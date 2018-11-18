@@ -1,0 +1,9 @@
+static Socket socket = null;
+
+try {
+            ServerSocket serverSocket = new ServerSocket(6969);
+            System.out.println("Dang cho ket noi...");
+        socket = serverSocket.accept();
+        } catch (IOException ex) {
+            Logger.getLogger(MyConnection.class.getName()).log(Level.SEVERE, null, ex);
+        }
