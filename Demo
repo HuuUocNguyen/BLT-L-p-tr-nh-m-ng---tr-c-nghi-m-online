@@ -7,3 +7,11 @@ try {
         } catch (IOException ex) {
             Logger.getLogger(MyConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+
+///////////////////////////
+static Socket socket = null;
+try {
+            System.out.println("Dang ket noi Client...");
+            socket = new Socket("localhost", 6969);
+            System.out.println("Ket noi toi server thanh cong");
